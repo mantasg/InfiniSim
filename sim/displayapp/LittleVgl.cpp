@@ -141,8 +141,10 @@ void LittleVgl::InitFileSystem() {
 void LittleVgl::SetFullRefresh(FullRefreshDirections direction) {
   if (scrollDirection == FullRefreshDirections::None) {
     scrollDirection = direction;
-    if (scrollDirection == FullRefreshDirections::Down) {
+    if (scrollDirection == FullRefreshDirections::Up) {
       lv_disp_set_direction(lv_disp_get_default(), 1);
+    } else if (scrollDirection == FullRefreshDirections::Down) {
+      lv_disp_set_direction(lv_disp_get_default(), 0);
     } else if (scrollDirection == FullRefreshDirections::Right) {
       lv_disp_set_direction(lv_disp_get_default(), 2);
     } else if (scrollDirection == FullRefreshDirections::Left) {
