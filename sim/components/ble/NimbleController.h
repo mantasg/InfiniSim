@@ -22,6 +22,7 @@
 //#include "components/ble/MotionService.h"
 #include "components/ble/weather/WeatherService.h"
 #include "components/fs/FS.h"
+#include "WebCallService.h"
 //#include "components/ble/FSService.h"
 
 namespace Pinetime {
@@ -72,6 +73,11 @@ namespace Pinetime {
       Pinetime::Controllers::MusicService& music() {
         return musicService;
       };
+      
+      Pinetime::Controllers::WebCallService& webCall() {
+        return webCallService;
+      };      
+
       Pinetime::Controllers::NavigationService& navigation() {
         return navService;
       };
@@ -112,6 +118,7 @@ namespace Pinetime {
 //      CurrentTimeService currentTimeService;
       MusicService musicService;
       WeatherService weatherService;
+      WebCallService webCallService;
       NavigationService navService;
 //      BatteryInformationService batteryInformationService;
 //      ImmediateAlertService immediateAlertService;
