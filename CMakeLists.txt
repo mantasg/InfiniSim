@@ -152,6 +152,9 @@ target_link_libraries(infinisim PUBLIC sim-base)
 # add Screens, fonts and icons with a globbing expression,
 # to enable easier CI test-runs for PRs adding new Screens/Fonts/Icons
 file(GLOB InfiniTime_SCREENS
+  "${InfiniTime_DIR}/src/displayapp/screens/WebCall.h"
+  "${InfiniTime_DIR}/src/displayapp/screens/WebCall.cpp"
+        
   "${InfiniTime_DIR}/src/displayapp/screens/*.h"
   "${InfiniTime_DIR}/src/displayapp/screens/*.cpp"
   "${InfiniTime_DIR}/src/displayapp/screens/settings/*.h"
