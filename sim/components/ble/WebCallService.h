@@ -16,6 +16,7 @@ namespace Pinetime {
                 int MakeWebCall();
                 std::string getResponse() const;
                 bool getResponseReceived() const;
+                void reset();
             private:
                 bool responseReceived = false;
                 std::string response {"NA"};
