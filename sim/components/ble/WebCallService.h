@@ -13,7 +13,7 @@ namespace Pinetime {
             public:
                 WebCallService();
                 void Init();
-                int MakeWebCall();
+                int MakeWebCall(std::string label);
                 std::string getResponse() const;
                 bool getResponseReceived() const;
                 void reset();
