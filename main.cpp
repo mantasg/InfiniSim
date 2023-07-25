@@ -826,23 +826,6 @@ public:
         settingsController.SetWatchFace(Pinetime::Applications::WatchFace::Digital);
         displayApp.StartApp(Pinetime::Applications::Apps::Clock, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
       }
-      else if (screen_idx == 2) {
-        settingsController.SetWatchFace(Pinetime::Applications::WatchFace::Analog);
-        displayApp.StartApp(Pinetime::Applications::Apps::Clock, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
-      }
-      else if (screen_idx == 3) {
-        settingsController.SetWatchFace(Pinetime::Applications::WatchFace::PineTimeStyle);
-        displayApp.StartApp(Pinetime::Applications::Apps::Clock, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
-      }
-      else if (screen_idx == 4) {
-        displayApp.StartApp(Pinetime::Applications::Apps::Paddle, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
-      }
-      else if (screen_idx == 5) {
-        displayApp.StartApp(Pinetime::Applications::Apps::Twos, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
-      }
-      else if (screen_idx == 6) {
-        displayApp.StartApp(Pinetime::Applications::Apps::Metronome, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
-      }
       else if (screen_idx == 7) {
         displayApp.StartApp(Pinetime::Applications::Apps::FirmwareUpdate, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
       }
@@ -857,9 +840,6 @@ public:
       }
       else if (screen_idx == 11) {
         displayApp.StartApp(Pinetime::Applications::Apps::Music, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
-      }
-      else if (screen_idx == 12) {
-        displayApp.StartApp(Pinetime::Applications::Apps::Paint, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
       }
       else if (screen_idx == 13) {
         displayApp.StartApp(Pinetime::Applications::Apps::SysInfo, Pinetime::Applications::DisplayApp::FullRefreshDirections::None);
