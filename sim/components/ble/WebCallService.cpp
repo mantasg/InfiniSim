@@ -12,8 +12,12 @@ void WebCallService::Init() {
 int WebCallService::MakeWebCall(std::string label) {
     responseReceived = false;
     if (label == "nagios_list") {
-      response = "[W] PRODUCTION01-c2c-environment\n[W] PRODUCTION01-web-host\n[W] ga-prod-environment"; 
+      response = "PRODUCTION01-c2c\nPRODUCTION01-web\nga-prod-env"; 
     }
+    else if (label == "nagios_status") {
+      response = "100\n2\n0\nMG/MG\nAD/OP";
+    }
+    
     responseReceived = true;
     return 0;
 }
