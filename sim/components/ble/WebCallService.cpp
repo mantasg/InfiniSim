@@ -10,7 +10,7 @@ void WebCallService::Init() {}
 int WebCallService::MakeWebCall(std::string label) {
     std::string response;
     if (label == "nagios_list") {
-      response = "PRODUCTION01-c2c\nPRODUCTION01-web\nga-prod-env"; 
+      response = "[WARN] PRODUCTION01-nginx-Instance Age\n[CRIT] PRODUCTION01-nginx-Instance Age"; 
     }
     else if (label == "nagios_status") {
       response = "100\n2\n0\nMG/MG\nAD/OP";
