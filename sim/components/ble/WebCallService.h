@@ -2,6 +2,8 @@
 
 #include <cstdint>
 #include <string>
+#include <set>
+#include "displayapp/screens/Screen.h"
 
 namespace Pinetime {
     namespace System {
@@ -14,12 +16,10 @@ namespace Pinetime {
                 WebCallService();
                 void Init();
                 int MakeWebCall(std::string label);
-                std::string getResponse() const;
-                bool getResponseReceived() const;
-                void reset();
+                void Subscribe(Applications::Screens::Screen* screen);
+                void Unsubscribe(Applications::Screens::Screen* screen);
             private:
-                bool responseReceived = false;
-                std::string response {"NA"};
+                std::set<Applications::Screens::Screen*> subscribers {};
         };
     }
 }
