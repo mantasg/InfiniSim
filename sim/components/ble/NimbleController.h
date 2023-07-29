@@ -23,6 +23,7 @@
 #include "components/ble/weather/WeatherService.h"
 #include "components/fs/FS.h"
 #include "WebCallService.h"
+#include "SleepTrackingService.h"
 //#include "components/ble/FSService.h"
 
 namespace Pinetime {
@@ -76,8 +77,12 @@ namespace Pinetime {
       
       Pinetime::Controllers::WebCallService& webCall() {
         return webCallService;
-      };      
+      };
 
+      Pinetime::Controllers::SleepTrackingService& sleepTracking() {
+        return sleepTrackingService;
+      };
+      
       Pinetime::Controllers::NavigationService& navigation() {
         return navService;
       };
@@ -119,6 +124,7 @@ namespace Pinetime {
       MusicService musicService;
       WeatherService weatherService;
       WebCallService webCallService;
+      SleepTrackingService sleepTrackingService;
       NavigationService navService;
 //      BatteryInformationService batteryInformationService;
 //      ImmediateAlertService immediateAlertService;

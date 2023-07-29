@@ -46,6 +46,7 @@ NimbleController::NimbleController(Pinetime::System::SystemTask& systemTask,
     musicService {systemTask},
     weatherService {systemTask, dateTimeController},
     webCallService {},
+    sleepTrackingService {},
     navService {systemTask} {
 //    batteryInformationService {batteryController},
 //    immediateAlertService {systemTask, notificationManager},

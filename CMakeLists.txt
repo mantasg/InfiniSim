@@ -124,6 +124,8 @@ target_sources(infinisim PUBLIC
   sim/components/ble/NavigationService.cpp
   sim/components/ble/WebCallService.cpp 
   sim/components/ble/WebCallService.h
+  sim/components/ble/SleepTrackingService.h
+  sim/components/ble/SleepTrackingService.cpp
   sim/components/ble/NimbleController.h
   sim/components/ble/NimbleController.cpp
   sim/components/ble/weather/WeatherService.h
